@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Responsive Queries */
+
+/******************* Main Header *****************/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.header__nav--ul {
+  display: flex;
+  list-style: none;
+}
+
+.header__nav--ul li a {
+  font-weight: bold;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header__nav--ul li a:hover {
+  color: yellow;
+}
+
+/******************* Hero Section *****************/
+.home {
+  padding-top: 80px;
+  background: url("../images/banner.jpg");
+  background-size: cover;
+  height: 55rem;
+}
+
+.home__container {
+  padding: 10rem 27.5rem;
+}
+
+.home__main {
+  max-width: 45rem;
+}
+
+.home__main h1 {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.home__main p {
+  margin: 2rem 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home__btn {
+  margin-top: 3.5rem;
+}
+
+.home__btn a {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.home__btn--one {
+  color: #222222;
+  background-color: gold;
+  margin-right: 1.5rem;
+}
+
+.home__btn--one:hover {
+  background-color: rgb(211, 179, 0);
+}
+
+.home__btn--two {
+  color: white;
+  background-color: purple;
+}
+
+.home__btn--two:hover {
+  background-color: rgb(77, 0, 77);
+}
+
+/******************* Welcome Section *****************/
+.welcome {
+  display: flex;
+  justify-content: center;
+  padding: 7.5rem 5rem;
+}
+
+.welcome__container {
+  max-width: 70rem;
+}
+
+.welcome__container h2 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #222222;
+}
+
+.welcome__text {
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+.welcome__text--para {
+  font-size: 1.5rem;
+  margin-right: 4rem;
+  line-height: 2;
+  color: #222222;
+}
+
+.welcome__text--image {
+  width: 20rem;
+}
+
+.welcome__details {
+  display: flex;
+  padding: 5rem 0;
+  border-bottom: 2px solid rgb(219, 219, 219);
+}
+
+.welcome__details--features:not(:last-child) {
+  padding-right: 2.75rem;
+}
+
+.welcome__details--features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome__details--features h3 {
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.welcome__details--features p {
+  margin: 1rem;
+  padding: 0 2rem;
+}
+
+.welcome__details--features img {
+  width: 5rem;
+}
+
+.features__btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.4s;
+  color: #222222;
+  background-color: gold;
+}
+
+.features__btn:hover {
+  color: white;
+  background-color: purple;
+}
+
+/******************* Project Section *****************/
+.projects__head {
+  color: #222222;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projects__card--container {
+  margin: 5rem 0;
+  margin-bottom: 7.5rem;
+  display: flex;
+}
+
+.projects__card:first-child {
+  background-color: #eee;
+  flex: 1;
+}
+.projects__card:nth-child(2) {
+  background-color: yellow;
+  flex: 1;
+}
+.projects__card:nth-child(3) {
+  background-color: #eee;
+  flex: 1;
+}
+.projects__card:last-child {
+  background-color: rgb(219, 219, 219);
+  flex: 1;
+}
+
+.projects__card img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+.projects__card--main {
+  padding: 3rem;
+}
+
+.projects__card--title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.projects__card--text {
+  margin-bottom: 7.5px;
+  color: #777777;
+}
+.projects__card--btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.4s;
+  color: #222222;
+  background-color: white;
+}
+
+.projects__card--btn:hover {
+  color: white;
+  background-color: purple;
+}
+
+/******************* Pricing Section *****************/
+.pricing h2 {
+  color: #222222;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.pricing__container {
+  margin: 5rem auto;
+  margin-bottom: 7.5rem;
+  max-width: 80rem;
+  display: flex;
+}
+
+.pricing__card {
+  flex: 1;
+  text-align: center;
+}
+
+.pricing__card:not(:last-child) {
+  border-right: 2px solid #ccc;
+  margin-right: 5rem;
+}
+
+.pricing__card--head {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.pricing__card--text {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #777777;
+}
+
+.pricing__card--ul {
+  list-style: none;
+}
+
+.pricing__card--ul li {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.pricing__card--btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.4s;
+  color: #222222;
+  background-color: yellow;
+}
+
+.pricing__card--btn:hover {
+  color: white;
+  background-color: purple;
+}
+
+/******************* Video Section *****************/
+.video {
+  background-color: purple;
+}
+
+.video__container h2 {
+  color: white;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.video__container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__frame {
+  width: 60%;
+  border-radius: 7.5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  height: 40rem;
+}
+
+/******************* Team Section *****************/
