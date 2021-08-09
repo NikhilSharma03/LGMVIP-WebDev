@@ -1,0 +1,33 @@
+.home {
+  padding: 7.5rem 15rem;
+}
+
+.home__profile--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.default__text {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.home button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  background-color: #5d3fd3;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s;
+}
+
+.home button:hover {
+  background-color: #2e129e;
+}
