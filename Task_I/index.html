@@ -4,23 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/app.js"></script>
     <title>Task I - LGMVIP</title>
   </head>
   <body>
     <!-- Main Header -->
     <header class="header">
       <h1 class="header__heading">Zippy</h1>
+      <div class="header__hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav--ul">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <aside class="sidedrawer__container">
+      <ul class="sidedrawer__nav--ul">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
 
     <!-- Hero Section  -->
     <section id="home" class="home">
@@ -203,7 +220,167 @@
 
       <!-- Team Section -->
       <section id="team" class="team">
-        <!-- //Content -->
+        <h2>Zippy Team</h2>
+        <div class="team__image--container">
+          <div class="team__profile">
+            <div class="team__profile--main">
+              <img
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                class="team__profile--image"
+              />
+              <div class="team__profile--social">
+                <a href="#"
+                  ><img alt="social" src="assets/images/instagram.png" />
+                </a>
+                <a href="#"
+                  ><img alt="social" src="assets/images/twitter.png" />
+                </a>
+              </div>
+            </div>
+            <h3>John Brause</h3>
+            <p>Lead Developer</p>
+          </div>
+          <div class="team__profile">
+            <div class="team__profile--main">
+              <img
+                src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="team__profile--image"
+              />
+              <div class="team__profile--social">
+                <a href="#"
+                  ><img alt="social" src="assets/images/instagram.png" />
+                </a>
+                <a href="#"
+                  ><img alt="social" src="assets/images/twitter.png" />
+                </a>
+              </div>
+            </div>
+            <h3>Sasha Brouse</h3>
+            <p>UI/UX Designer</p>
+          </div>
+          <div class="team__profile">
+            <div class="team__profile--main">
+              <img
+                src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                class="team__profile--image"
+              />
+              <div class="team__profile--social">
+                <a href="#"
+                  ><img alt="social" src="assets/images/instagram.png" />
+                </a>
+                <a href="#"
+                  ><img alt="social" src="assets/images/twitter.png" />
+                </a>
+              </div>
+            </div>
+            <h3>Eren Stewart</h3>
+            <p>Project Manager</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+        <h1 class="newsletter__head">Newsletter Signup</h1>
+        <form class="newsletter__form">
+          <input type="email" placeholder="Email" />
+          <button>SIGNUP</button>
+        </form>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <div class="blog__container">
+          <div class="blog__card">
+            <img src="assets/images/blog1.jpg" alt="blog1" />
+            <h1 class="blog__card--head">Lorem ipsum dolor sit</h1>
+            <p class="blog__card--text">15 Jan, 2015</p>
+            <p class="blog__card--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              tenetur culpa distinctio quidem, illum suscipit corrupti. Incidunt
+              dolores quia enim quos soluta.
+            </p>
+            <a href="#" class="blog__card--btn">Buy</a>
+          </div>
+          <div class="blog__card">
+            <img src="assets/images/blog2.jpg" alt="blog2" />
+            <h1 class="blog__card--head">Lorem ipsum dolor sit</h1>
+            <p class="blog__card--text">15 Jan, 2015</p>
+            <p class="blog__card--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              tenetur culpa distinctio quidem, illum suscipit corrupti. Incidunt
+              dolores quia enim quos soluta.
+            </p>
+            <a href="#" class="blog__card--btn">Buy</a>
+          </div>
+          <div class="blog__card">
+            <img src="assets/images/blog3.jpg" alt="blog3" />
+            <h1 class="blog__card--head">Lorem ipsum dolor sit</h1>
+            <p class="blog__card--text">15 Jan, 2015</p>
+            <p class="blog__card--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              tenetur culpa distinctio quidem, illum suscipit corrupti. Incidunt
+              dolores quia enim quos soluta.
+            </p>
+            <a href="#" class="blog__card--btn">Buy</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <img src="assets/images/map.png" class="contact__image" alt="map" />
+        <form class="contact__form">
+          <h2>Contact</h2>
+          <div class="contact__form--input">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="contact__form--input">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="contact__form--input">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" />
+          </div>
+          <div class="contact__form--input">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <button class="contact__form--button">SEND</button>
+        </form>
+      </section>
+
+      <!-- Footer Section -->
+      <section id="footer" class="footer">
+        <div class="footer__container">
+          <div class="footer__box">
+            <h1>OFFICE ADDRESS</h1>
+            <p>Lorem ipsum san, 234</p>
+            <p>1200 Consectetur</p>
+            <p>Adassgskgl</p>
+          </div>
+          <div class="footer__box">
+            <h1>FOLLOW US</h1>
+            <p class="footer__icon">
+              <img src="assets/images/instagram_footer.png" />@zippy
+            </p>
+            <p class="footer__icon">
+              <img src="assets/images/facebook_footer.png" />@zippy
+            </p>
+            <p class="footer__icon">
+              <img src="assets/images/twitter_footer.png" />@zippy
+            </p>
+          </div>
+          <div class="footer__box">
+            <h1>CONTACT US</h1>
+            <p>+ 123 456 789</p>
+            <p>zippy@skype</p>
+            <p>enquiry@zippy.com</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
