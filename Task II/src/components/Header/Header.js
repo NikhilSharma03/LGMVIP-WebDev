@@ -1,10 +1,11 @@
 import React from "react";
+import "./Header.css";
 
-function Header() {
+function Header(props) {
   return (
-    <header>
-      <h1>FetchUser</h1>
-      <button>Get Users</button>
+    <header className="header">
+      <h1>Fetch User</h1>
+      <button onClick={props.onClick}>Get Users</button>
     </header>
   );
 }
