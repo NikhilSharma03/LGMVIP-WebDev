@@ -1,0 +1,16 @@
+.home__container h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+  color: white;
+  padding: 1.25rem;
+  background-color: #5738d3;
+}
+
+.home__container p {
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  color: rgb(184, 184, 184);
+}

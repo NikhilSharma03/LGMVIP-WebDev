@@ -1,0 +1,49 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 1;
+  padding: 4rem 1rem;
+  background-color: #141414;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  border: 2px solid #7254ec;
+}
+
+.header h1 a {
+  color: #7254ec;
+  text-decoration: none;
+}
+
+.header button {
+  background-color: #5d3fd3;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s;
+}
+
+.header button:hover {
+  background-color: #2e129e;
+}
+
+.header nav {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.main__container {
+  flex: 4;
+}
