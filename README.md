@@ -20,7 +20,7 @@
 <br>
 
 <h3 align="center"> 🌟 Task I : 💻 Create a Single Page Website 🚀</h3>
-Demo : <a href="https://youtu.be/SxORatKgDAs">Project I</a>
+<h3 align="center"> Demo : <a href="https://youtu.be/SxORatKgDAs">Project I</a> </h3>
 
 <br>
 
