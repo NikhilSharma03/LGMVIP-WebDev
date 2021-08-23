@@ -57,7 +57,7 @@ src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&log
 
 <br>
 
-<h3 align="center"> 🌟 Task II : 💻 Web Application using `create-react-app` 🚀</h3>
+<h3 align="center"> 🌟 Task II : 💻 Web Application using create-react-app 🚀</h3>
 <h3 align="center"> Demo : <a href="https://youtu.be/8FfKfOKpCuE>Project II</a> </h3>
 
 <br>
@@ -68,8 +68,7 @@ src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&log
 
 <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img alt="HTML5" 
 src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" 
-src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/docs/getting-started.html)
+src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="ReactJS" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
  
 </div>
 
