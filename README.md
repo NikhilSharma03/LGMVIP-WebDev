@@ -1,6 +1,6 @@
 # LGMVIP-WebDev Projects
 
-## Project I
+<h1 align="center">Project I</h1>
 
 <div align="center">  
 <br>
