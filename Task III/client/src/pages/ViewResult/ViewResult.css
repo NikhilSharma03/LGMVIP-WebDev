@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  border: 2px solid #7254ec;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form__head {
+  text-align: center;
+  color: #ddd;
+  margin-bottom: 3rem;
+}
+
+.result {
+  width: 45rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 2px solid #7254ec;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.result h1 {
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #8266f0;
+}
+
+.result h1 span {
+  color: #ccc;
+}
