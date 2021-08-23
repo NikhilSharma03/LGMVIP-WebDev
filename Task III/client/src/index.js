@@ -4,11 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import reducer from "./store/reducers/auth";
 
-const store = createStore(reducer);
+const rootReducer = combineReducers({
+  auth: reducer,
+});
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>

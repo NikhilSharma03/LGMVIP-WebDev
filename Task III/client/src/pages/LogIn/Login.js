@@ -2,29 +2,72 @@ import React, { useState } from "react";
 import "./Login.css";
 import InputField from "./../../components/InputField/InputField";
 import SubmitButton from "./../../components/SubmitButton/SubmitButton";
+import * as actionCreators from "./../../store/actions/auth";
+import { useDispatch, useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
 
-function Login() {
+function Login(props) {
   const [semail, setSEmail] = useState("");
   const [spassword, setSPassword] = useState("");
   const [temail, setTEmail] = useState("");
   const [tpassword, setTPassword] = useState("");
 
+  const isAuthenticated = useSelector((state) => state.auth.isAuth);
+  const dispatch = useDispatch();
+  const onAuth = () => dispatch(actionCreators.onAuthenticated());
+
+  if (isAuthenticated) {
+    return <Redirect from="/" to="/"></Redirect>;
+  }
+
   const onStudentSubmitHandler = (event) => {
     event.preventDefault();
     const dataBody = {
-      semail,
-      spassword,
+      email: semail,
+      password: spassword,
     };
-    console.log("DATA ==>", dataBody);
+    fetch("http://localhost:5000/api/auth/login_student", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        if (res.status == 200) {
+          onAuth();
+        }
+        return res.json();
+      })
+      .then((resBody) => {
+        console.log(resBody);
+        props.history.push("/login");
+      });
   };
 
   const onTeacherSubmitHandler = (event) => {
     event.preventDefault();
     const dataBody = {
-      temail,
-      tpassword,
+      email: temail,
+      password: tpassword,
     };
-    console.log("DATA ==>", dataBody);
+    fetch("http://localhost:5000/api/auth/login_teacher", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        if (res.status == 200) {
+          onAuth();
+        }
+        return res.json();
+      })
+      .then((resBody) => {
+        console.log(resBody);
+        props.history.push("/login");
+      });
   };
 
   return (

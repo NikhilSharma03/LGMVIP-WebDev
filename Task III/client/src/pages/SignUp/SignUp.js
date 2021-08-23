@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import "./SignUp.css";
 import InputField from "./../../components/InputField/InputField";
 import SubmitButton from "./../../components/SubmitButton/SubmitButton";
+import { useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
 
-function SignUp() {
+function SignUp(props) {
   const [semail, setSEmail] = useState("");
   const [spassword, setSPassword] = useState("");
   const [temail, setTEmail] = useState("");
   const [tpassword, setTPassword] = useState("");
+
+  const isAuthenticated = useSelector((state) => state.auth.isAuth);
+  if (isAuthenticated) {
+    return <Redirect from="/" to="/"></Redirect>;
+  }
 
   const onStudentSubmitHandler = (event) => {
     event.preventDefault();
@@ -15,7 +22,18 @@ function SignUp() {
       email: semail,
       password: spassword,
     };
-    console.log("DATA ==>", dataBody);
+    fetch("http://localhost:5000/api/auth/signup_student", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((resBody) => {
+        console.log(resBody);
+        props.history.push("/login");
+      });
   };
 
   const onTeacherSubmitHandler = (event) => {
@@ -24,7 +42,18 @@ function SignUp() {
       email: temail,
       password: tpassword,
     };
-    console.log("DATA ==>", dataBody);
+    fetch("http://localhost:5000/api/auth/signup_teacher", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((resBody) => {
+        console.log(resBody);
+        props.history.push("/login");
+      });
   };
 
   return (

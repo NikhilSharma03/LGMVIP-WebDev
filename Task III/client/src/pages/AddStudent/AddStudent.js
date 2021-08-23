@@ -2,20 +2,39 @@ import React, { useState } from "react";
 import "./AddStudent.css";
 import InputField from "../../components/InputField/InputField";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
+import { useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
 
-function AddStudent() {
+function AddStudent(props) {
   const [name, setName] = useState("");
   const [roll, setRoll] = useState("");
   const [classNum, setClassNum] = useState("");
+
+  const isAuthenticated = useSelector((state) => state.auth.isAuth);
+  if (!isAuthenticated) {
+    return <Redirect from="/" to="/login"></Redirect>;
+  }
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
     const dataBody = {
       name,
-      roll,
-      classNum,
+      rollNo: roll,
+      className: classNum,
     };
-    console.log("Data ==>", dataBody);
+    fetch("http://localhost:5000/api/student/add", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((resBody) => {
+        console.log(resBody);
+        alert(resBody.message);
+        props.history.push("/add_marks");
+      });
   };
 
   return (

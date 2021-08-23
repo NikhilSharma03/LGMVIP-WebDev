@@ -3,7 +3,7 @@ import "./AddMarks.css";
 import InputField from "../../components/InputField/InputField";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 
-function AddMarks() {
+function AddMarks(props) {
   const [name, setName] = useState("");
   const [roll, setRoll] = useState("");
   const [classNum, setClassNum] = useState("");
@@ -16,14 +16,26 @@ function AddMarks() {
     event.preventDefault();
     const dataBody = {
       name,
-      roll,
-      classNum,
+      rollNo: roll,
+      className: classNum,
       math,
       science,
       history,
       music,
     };
-    console.log("Data ==>", dataBody);
+    fetch("http://localhost:5000/api/marks/add", {
+      method: "POST",
+      body: JSON.stringify(dataBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((resBody) => {
+        console.log(resBody);
+        alert(resBody.message);
+        props.history.push("/");
+      });
   };
 
   return (

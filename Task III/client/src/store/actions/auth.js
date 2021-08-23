@@ -5,9 +5,3 @@ export const onAuthenticated = () => {
     type: IS_AUTH,
   };
 };
-
-export const onLogOut = () => {
-  return {
-    type: LOG_OUT,
-  };
-};

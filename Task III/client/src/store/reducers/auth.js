@@ -7,10 +7,8 @@ const reducer = (state = { isAuth: false }, action) => {
         isAuth: true,
       };
 
-    case LOG_OUT:
-      return {
-        isAuth: false,
-      };
+    default:
+      return state;
   }
 };
 
