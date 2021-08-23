@@ -12,8 +12,8 @@ function SignUp() {
   const onStudentSubmitHandler = (event) => {
     event.preventDefault();
     const dataBody = {
-      semail,
-      spassword,
+      email: semail,
+      password: spassword,
     };
     console.log("DATA ==>", dataBody);
   };
@@ -21,8 +21,8 @@ function SignUp() {
   const onTeacherSubmitHandler = (event) => {
     event.preventDefault();
     const dataBody = {
-      temail,
-      tpassword,
+      email: temail,
+      password: tpassword,
     };
     console.log("DATA ==>", dataBody);
   };
