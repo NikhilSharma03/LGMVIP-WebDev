@@ -2,7 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
 require("dotenv").config();
+
 // Route Handler
 const authRoutes = require("./routes/auth");
 const classesRoutes = require("./routes/classes");
@@ -10,6 +12,7 @@ const studentRoutes = require("./routes/student");
 const marksRoutes = require("./routes/marks");
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/student", studentRoutes);
