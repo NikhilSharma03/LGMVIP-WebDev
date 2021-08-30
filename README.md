@@ -57,7 +57,7 @@ src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&log
 
 <br>
 
-<h3 align="center"> 🌟 Task II : 💻 Web Application using create-react-app 🚀</h3>
+<h3 align="center"> 🌟 Task II : 💻 Web Application using `create-react-app` 🚀</h3>
 <h3 align="center"> Demo : <a href="https://youtu.be/8FfKfOKpCuE">Project II</a> </h3>
 
 <br>
