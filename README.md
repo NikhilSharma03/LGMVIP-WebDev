@@ -1,6 +1,6 @@
 # LGMVIP-WebDev Projects
 
-## Project I
+## Task I - Project
 
 <div align="center">  
 <br>
@@ -38,7 +38,7 @@ src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&log
 
 <br>
 
-## Project II
+## Task II - Project
 
 <div align="center">  
 <br>
@@ -76,7 +76,7 @@ src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&log
 
 <br>
 
-## Project III
+## Task III - Project
 
 <div align="center">  
 <br>
